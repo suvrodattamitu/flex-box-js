@@ -24,6 +24,7 @@
 
 .container-1 .cards .box {
   flex-basis: 30%;
+  box-shadow: 0 10px 6px -6px #777;
 }
 
 .container-1 .cards .box h3 {
@@ -67,10 +68,85 @@
 .container-2 .teams .team {
   flex-basis: 30%;
   text-align: center;
+  box-shadow: 0 10px 6px -6px #777;
 }
 
 .container-2 .teams .team img.team-image {
   width: 100%;
   margin: auto;
+}
+
+.container-3 {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: #333;
+}
+
+.container-3 .cards {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  max-width: 90%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  font-family: consolas;
+}
+
+.container-3 .cards .card {
+  position: relative;
+  padding: 5px;
+}
+
+.container-3 .cards .card .face {
+  width: 300px;
+  height: 200px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.container-3 .cards .card .face1 {
+  position: relative;
+  background: #333;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  z-index: 1;
+}
+
+.container-3 .cards .card .face1 .content {
+  opacity: 0.2;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.container-3 .cards .card .face2 {
+  position: relative;
+  background: #fff;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+}
+
+.container-3 .cards:hover .face .face1 {
+  background: burlywood;
+}
+
+.container-3 .card:hover .face .face1 {
+  background: burlywood;
+  font: white;
 }
 
