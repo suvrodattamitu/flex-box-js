@@ -1,6 +1,76 @@
-.rule {
-  background: blue;
-  color: white;
-  margin-left: 15px;
+.container-1 {
+  width: 1000px;
+  max-width: 90%;
+  margin: auto;
+}
+
+.container-1 h1 {
+  text-align: center;
+}
+
+.container-1 .cards {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.container-1 .cards div {
+  border: 1px solid grey;
+  margin: 5px;
+  border-radius: 8px;
+}
+
+.container-1 .cards .box {
+  flex-basis: 30%;
+}
+
+.container-1 .cards .box h3 {
+  text-align: center;
+}
+
+.container-1 .cards .box img.box-image {
+  width: 100%;
+  margin: auto;
+}
+
+.container-1 .cards .box p.para {
+  padding-left: 5px;
+  text-align: center;
+}
+
+.container-2 {
+  width: 1000px;
+  max-width: 90%;
+  margin: auto;
+}
+
+.container-2 h1 {
+  text-align: center;
+}
+
+.container-2 .teams {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.container-2 .teams div {
+  border: 1px solid grey;
+  margin: 5px;
+  border-radius: 8px;
+}
+
+.container-2 .teams .team {
+  flex-basis: 30%;
+  text-align: center;
+}
+
+.container-2 .teams .team img.team-image {
+  width: 100%;
+  margin: auto;
 }
 

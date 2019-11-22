@@ -1,9 +1,76 @@
 @import "mixins";
 
-.rule{
+.container-1{
 
-	background:blue;
-	color:white;
-	margin-left:15px;
+	width:1000px;
+	max-width: 90%;
+	margin:auto;
 
+	h1{
+		text-align: center;
+	}
+
+	.cards{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		
+		div{
+			border:1px solid grey;
+			margin:5px;
+			border-radius: 8px;
+		}
+
+		.box{
+			flex-basis: 30%;
+
+			h3{
+				text-align: center;
+			}
+
+			img.box-image{
+				width:100%;
+				margin:auto;
+			}
+
+			p.para{
+				padding-left: 5px;
+				text-align: center;
+			}
+		}
+
+	}
+
+}
+
+.container-2{
+	width:1000px;
+	max-width: 90%;
+	margin:auto;
+
+	h1{
+		text-align: center;
+	}
+
+	.teams{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		div{
+			border:1px solid grey;
+			margin:5px;
+			border-radius: 8px;
+		}
+
+		.team{
+			flex-basis: 30%;
+			text-align: center;
+			img.team-image{
+				width:100%;
+				margin:auto;
+			}
+
+		}
+	}
 }
